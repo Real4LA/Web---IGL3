@@ -1,0 +1,132 @@
+﻿* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-color: #d1d5db;
+  color: #111827;
+}
+body {
+  background-color: rgb(245, 245, 246);
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+}
+
+input {
+  border-radius: 5px;
+  height: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  background-color: rgb(245, 245, 246);
+  border-radius: 10px;
+  height: 3rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 5px;
+}
+button {
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000000;
+  background-color: rgb(245, 245, 246);
+  border-radius: 5px;
+  font-size: medium;
+  width: 100%;
+  border-style: solid;
+}
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+p {
+  font-size: large;
+}
+#counter {
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 0;
+}
+#second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+#main div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#counter {
+  background-color: rgb(245, 245, 246);
+  border-style: solid;
+  border-radius: 20px;
+  width: 73%;
+  padding: 1rem;
+  gap: 0;
+}
+#counter p {
+  font-weight: bolder;
+}
+#notDoneT {
+  color: rgb(246, 169, 46);
+}
+
+#doneT {
+  color: green;
+}
+
+#main-card {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 60%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 15vh;
+}
+input {
+  width: 100%;
+  background-color: #ffffff;
+  border-style: solid;
+}
+#buttons {
+  width: 100.6%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>My To Do List</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1 class="app-title">To Do</h1>
+        <div id="counter" class="counter">
+          <p class="counter-heading">Tasks Overview</p>
+          <div class="counter-stats">
+            <p class="counter-stat">
+              <span class="counter-label">Done</span>
+              <span id="done" class="counter-value"></span>
+            </p>
+            <p class="counter-stat">
+              <span class="counter-label">Ongoing</span>
+              <span id="notdone" class="counter-value"></span>
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="app-main">
+        <section id="main" class="panel panel-primary">
+          <ul id="list" class="task-list"></ul>
+          <div class="task-entry">
+            <input type="text" id="input" placeholder="Add a task" />
+            <button id="addButton" class="btn btn-primary" onclick="addTask()">
+              Add Task
+            </button>
+          </div>
+          <div class="task-controls">
+            <button id="filterTasks" class="btn btn-secondary" onclick="filterTasks()">
+              Filter Tasks
+            </button>
+            <button id="deleteAllButton" class="btn btn-danger" onclick="deleteAll()">
+              Delete All
+            </button>
+          </div>
+        </section>
+        <section id="second" class="panel panel-secondary" aria-live="polite"></section>
+      </main>
+    </div>
+  </body>
+</html>
