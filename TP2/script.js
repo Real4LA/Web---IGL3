@@ -185,7 +185,7 @@ function filterTasks() {
       return null;
     } else {
       for (let i = 0; i < tasks.length; i++) {
-        if (tasks[i].task.includes(hint)) {
+        if (tasks[i].task.toLowerCase().includes(hint.toLowerCase())) {
           results.push(i);
         }
       }
