@@ -8,43 +8,28 @@
     <title>My To Do List</title>
   </head>
   <body>
-    <div class="app-shell">
-      <header class="app-header">
-        <h1 class="app-title">To Do</h1>
-        <div id="counter" class="counter">
-          <p class="counter-heading">Tasks Overview</p>
-          <div class="counter-stats">
-            <p class="counter-stat">
-              <span class="counter-label">Done</span>
-              <span id="done" class="counter-value"></span>
-            </p>
-            <p class="counter-stat">
-              <span class="counter-label">Ongoing</span>
-              <span id="notdone" class="counter-value"></span>
-            </p>
-          </div>
-        </div>
-      </header>
-      <main class="app-main">
-        <section id="main" class="panel panel-primary">
-          <ul id="list" class="task-list"></ul>
-          <div class="task-entry">
-            <input type="text" id="input" placeholder="Add a task" />
-            <button id="addButton" class="btn btn-primary" onclick="addTask()">
-              Add Task
-            </button>
-          </div>
-          <div class="task-controls">
-            <button id="filterTasks" class="btn btn-secondary" onclick="filterTasks()">
-              Filter Tasks
-            </button>
-            <button id="deleteAllButton" class="btn btn-danger" onclick="deleteAll()">
-              Delete All
-            </button>
-          </div>
-        </section>
-        <section id="second" class="panel panel-secondary" aria-live="polite"></section>
-      </main>
+    <center>
+      <div id="main-card">
+        <h1>To Do</h1>
+      <div id="counter">Tasks Overview:
+        <div><p id="doneT">Done: <span id="done"></span></p>
+        <p id="notDoneT">Ongoing: <span id="notdone"></span></p></div>
+        
+      </div>
+      <div id="main">
+      <ul id="list"></ul>
+      <input type="text" id="input" placeholder="Enter Task..."></input><br>
+      <div id="buttons">
+      <button id="addButton" onclick="addTask()">Add Task</button>
+      <button id="filterTasks" onclick="filterTasks()">Filter Tasks</button>
+      <button id="deleteAllButton" onclick="deleteAll()">Delete All</button>
     </div>
+    </div>
+    <div id="second"></div>
+      
+    
+      </div>
+      <footer>Mohamed Alaa El Abed &copy; 2025</footer>
+    </center> 
   </body>
 </html>
