@@ -1,0 +1,12 @@
+/* forms.css */
+input.valid-required {
+  border-left: 5px solid green;
+}
+
+input.valid-optional {
+  border-left: 5px solid blue;
+}
+
+input.invalid {
+  border-left: 5px solid red;
+}
