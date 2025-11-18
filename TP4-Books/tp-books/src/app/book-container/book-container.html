@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Gestion des Livres</h1>
+
+  <app-book-form
+    [categories]="categories"
+    [bookToEdit]="bookToEdit"
+    (bookAdded)="onBookAdded($event)"
+    (bookUpdated)="onBookUpdated($event)"
+  >
+  </app-book-form>
+
+  <app-book-list
+    [books]="books"
+    [categories]="categories"
+    (bookEdit)="onBookEdit($event)"
+    (bookDelete)="onBookDelete($event)"
+  >
+  </app-book-list>
+</div>
